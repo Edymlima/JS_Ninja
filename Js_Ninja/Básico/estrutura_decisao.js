@@ -1,5 +1,5 @@
 /* Teste Console  
-    Desvio condicional 
+    Estrutura de decisao e desvio condicional
 */
 
 
