@@ -1,4 +1,5 @@
-/* Principais operadores
+/* Teste Console 
+Principais operadores
     Infinity
     NaN
     +
