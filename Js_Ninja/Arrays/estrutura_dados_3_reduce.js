@@ -82,3 +82,49 @@ var filtroMenorQueTres = numeros.reduce((total, item)=>  {
       return total; 
 },[])
 console.log(filtroMenorQueTres);
+
+
+var produtos = [{
+    id: '1',
+    nome: 'notebook',
+    categoria: 'computador',
+    valor: 5000.00,
+    qtd: 3
+},
+{
+    id: '2',
+    nome: 'PC Gamer',
+    categoria: 'computador',
+    valor: 7000.00,
+    qtd: 2
+},
+{
+    id: '3',
+    nome: 'teclado',
+    categoria: 'acessorio',
+    valor: 150.00,
+    qtd: 10
+}
+];
+
+var total = produtos.map((x)=>{
+    arr = parseFloat(x.valor); 
+    return arr;
+})
+console.log(total);
+
+var soma = total.reduce((total, item)=>{    
+    return  parseFloat(total) + parseFloat(item);
+});
+console.log(soma);
+
+/** simplificado */
+
+var total = produtos.map((x)=>{
+    arr = parseFloat(x.valor); 
+    return arr;
+}).reduce((total, item)=>{    
+    return  parseFloat(total) + parseFloat(item);
+});
+console.log(total);
+
